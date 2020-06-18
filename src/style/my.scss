@@ -1,0 +1,482 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
+    color: #1d1d1d;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-full {
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// ========================================header========================================
+.main-header {
+    background: url(../img/main_page/main_bg.jpg) center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+
+    .navbar-toggler {
+        color: #191919;
+    }
+
+    .navbar-brand,
+    ul li a {
+        color: #191919;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-right: 30px;
+        padding-top: 40px;
+    }
+
+    ul li a {
+        font-size: 12px;
+
+        &:hover {
+            color: #10C9C3;
+            transition: all .5s;
+        }
+
+        // &:after {
+        //     content: "";
+        //     display: block;
+        //     width: 100%;
+        //     background-color: #ffffff;
+        //     height: 2px;
+        //     transform: scale(0);
+        //     transition: all .3s;
+        // }
+        // &:hover {
+        //     &:after{
+        //         transform: scale(1);
+        //     }
+        // }
+    }
+}
+
+.main-header-text {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    max-width: 600px;
+    color: #1D1D1D;
+    padding: 20px;
+
+    h3 {
+        font-size: 38px;
+    }
+
+    p {
+        color: #787878;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+}
+
+.main-header-btn {
+    padding-top: 30px;
+}
+
+.btn {
+    height: 55px;
+    padding-left: 45px;
+    padding-right: 45px;
+    background-color: #10C9C3;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: all .5s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+
+// ========================================section-aboutUs========================================
+.section-aboutUs {
+    padding: 100px 0;
+    text-align: center;
+
+    .about-descr {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    img {
+        min-width: 0;
+    }
+
+    h3 {
+        color: #191919;
+        font-size: 30px;
+
+    }
+
+    p {
+        padding: 35px 0;
+        color: #787878;
+        font-size: 16px;
+    }
+}
+
+// ========================================section-skills========================================
+.section-skills {
+    background: url(../img/main_page/skills_bg.jpg) center no-repeat;
+    background-size: cover;
+    max-height: 570px;
+
+    h3 {
+        font-size: 30px;
+        color: #171717;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 30px;
+    }
+
+    .prof-skills {
+        background-color: #F8F9F9;
+        padding: 160px 80px;
+    }
+
+    .progress {
+        height: 3px;
+    }
+
+    .progress-bar {
+        background-color: #10C9C3;
+    }
+}
+
+
+// ========================================section-indicators========================================
+.section-indicators {
+    background-color: #10C9C3;
+    padding: 100px 90px;
+
+    i {
+        font-size: 65px;
+        color: #F8F9F9;
+    }
+
+    p {
+        padding-left: 40px;
+        color: #F8F9F9;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        span {
+            font-size: 18px;
+        }
+    }
+}
+
+// ========================================section-gallery========================================
+img {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gallery-block {
+    a.fancybox {
+        &:before {
+            content: '';
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            transition: background-color .3s ease-in-out;
+        }
+
+        &:hover {
+            &:before {
+                background-color: rgba(0, 0, 0, 0.35);
+            }
+        }
+    }
+}
+
+.gallery-link {
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    min-height: auto;
+    background-color: #F5F5F5;
+    text-align: center;
+    padding: 40px 0;
+    color: #8E8E8E;
+    font-weight: 500;
+    font-size: 14px;
+
+    &:hover {
+        color: #F5F5F5;
+        transition: background-color .9s;
+        background-color: #10C9C3;
+    }
+}
+
+
+// ========================================section-player========================================
+.section-player {
+    padding: 100px 0;
+
+    h3,
+    p {
+        max-height: 500px;
+        text-align: center;
+    }
+
+    h3 {
+        color: #191919;
+        font-size: 30px;
+    }
+
+    p {
+        margin-top: 40px;
+        color: #787878;
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    .embed-responsive {
+        position: relative;
+        max-height: 570px;
+
+        #videoPlayBtn {
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            position: absolute;
+            top: 0;
+            cursor: pointer;
+            background: url(../img/main_page/play.png) center no-repeat;
+        }
+    }
+}
+
+
+// ========================================section-typeWork========================================
+.section-typeWork {
+    background-color: #F5F5F5;
+    padding: 100px 115px;
+
+    i {
+        font-size: 50px;
+    }
+
+    h4 {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        color: #787878;
+    }
+}
+
+// ========================================section-reviews========================================
+.section-reviews {
+    background-color: #10C9C3;
+
+    .carousel-item {
+        text-align: center;
+        padding: 160px 260px;
+
+        p {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #fff;
+        }
+    }
+
+    li {
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+// ========================================section-partners========================================
+section.section-partners {
+    padding: 100px 115px;
+
+    .partners-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .partners-list--item {
+            width: 130px;
+        }
+    }
+}
+
+// ========================================section-form========================================
+.section-form {
+    background-color: #F5F5F5;
+    padding: 100px;
+
+    h3 {
+        color: #1D1D1D;
+        font-size: 30px;
+    }
+
+    p {
+        color: #787878;
+        font-size: 16px;
+    }
+
+    .form-control {
+        height: 48px;
+        margin-top: 40px;
+        color: #787878;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .form-control-last {
+        height: 170px;
+    }
+}
+
+
+// ========================================section-footer========================================
+.section-footer {
+    background-color: #141414;
+    padding: 50px;
+
+    .nav-link {
+        padding: 0.4rem 0;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #BCBCBC;
+    }
+
+    li {
+        color: #BCBCBC;
+        font-weight: 500;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ========================================mobile========================================
+@media only screen and (max-width: 991px) {
+    .main-header {
+        .navbar-nav {
+            background: linear-gradient(to bottom, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+            position: relative;
+            text-align: center;
+            z-index: 1;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .section-reviews {
+        .carousel-item {
+            padding: 80px 130px;
+        }
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .section-form {
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .section-reviews {
+        .carousel-item {
+            padding: 20px 50px;
+
+            p {
+                font-size: 15px;
+            }
+
+            footer {
+                font-size: 12px;
+            }
+        }
+    }
+}
